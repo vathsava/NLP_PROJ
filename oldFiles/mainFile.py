@@ -1,5 +1,7 @@
 from jaccard import calcJaccard
 
+
+
 filePath = "./developset/1999-W02-5.story"
 
 f = open(filePath)
