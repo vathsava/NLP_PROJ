@@ -1,3 +1,7 @@
+#########################################################
+#This is the main file where project execution starts
+##########################################################
+
 import sys
 from generateAnswers import generateAnswers
 
