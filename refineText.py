@@ -1,31 +1,28 @@
-from jaccard import calcJaccard
-
 def getSentencesFromStory(completeText):
     story = completeText.split("TEXT:")
     sentences = story[1].split(".")
     return sentences
 
 def getQuestionsFromFile(completeText):
-    questions = []
+    lines = []
     for line in completeText:
-        if line.find("Question: ") == 0:
-            questions.append(line)
-    return questions
-
-
-def generateAnswers(story,questions):
-    sentences = getSentencesFromStory(story)
-    questions = getQuestionsFromFile(questions)
+        lines.append(line)
     
-    maxd=0;
-    ans="bbb";
-    for q in questions:
-        for s in sentences:
-            f=calcJaccard(q, s);
-            if maxd<f:
-                ans=s;
-                maxd=f;
-        print q;
-        print ans;
-        maxd=0.0;
-    ans="";
+    questions = []    
+    count = 0
+    while (count < len(lines)):
+        questionRow = []
+        if lines[count].find("QuestionID: ") == 0:
+            if lines[count + 1].find("Question: ") == 0:
+                if lines[count + 2].find("Difficulty: ") == 0:
+                    qID = lines[count].split(": ")
+                    ques = lines[count+1].split(": ")
+                    diff = lines[count+2].split(": ")
+                    questionRow.append(qID[1].rstrip())
+                    questionRow.append(ques[1].rstrip())
+                    questionRow.append(diff[1].rstrip())
+                count += 1
+            count += 1
+        count += 1        
+        questions.append(questionRow)
+    return questions

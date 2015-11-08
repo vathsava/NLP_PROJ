@@ -1,5 +1,5 @@
 import sys
-from refineText import generateAnswers
+from generateAnswers import generateAnswers
 
 #########################################################
 #Reading the list of stories from input file
