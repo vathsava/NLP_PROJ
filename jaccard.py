@@ -1,15 +1,13 @@
 from __future__ import division
 from printingText import printQuestion, printQuestionIDtoFile
 from printingText import printAnswer, printAnswerToFile
+from refineText import getWordsInString
 
-def jaccardDistance(quesString,ansString):
-    wordsInQues = quesString.split(" ");
-    wordsInAns = ansString.split(" ");
-    
+def jaccardDistance(quesWords,sentWords):
     match = 0
     nonMatch = 0
-    for qw in wordsInQues:
-        for aw in wordsInAns:
+    for qw in quesWords:
+        for aw in sentWords:
             if qw == aw :
                 match += 1
             else:
@@ -27,20 +25,20 @@ def generateAnswersUsingJaccard(questions, sentences):
             #raise Err('Error in Extracting Question')
             continue
         qID = q[0] 
-        ques = q[1]
+        quesString = q[1]
+        quesWords = getWordsInString(quesString)
+        
         ans = ""
         maxd = 0 
         for s in sentences:
-            f = jaccardDistance(ques, s)
+            sentWords = getWordsInString(s)
+            f = jaccardDistance(quesWords, sentWords)
             if maxd<f:
                 ans = s
                 maxd = f
-        printQuestion(ques)
+                
+        printQuestion(quesString)
         printAnswer(ans)
         printQuestionIDtoFile(qID)
         printAnswerToFile(ans)
         print "\n"
-
-
-
-    

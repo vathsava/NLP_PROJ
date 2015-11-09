@@ -11,11 +11,11 @@ def printQuestionID(qID):
     print q
     
 def printQuestionIDtoFile(qID):
-    q = "QuestionID: " + qID
+    q = "QuestionID: " + qID + "\n"
     wPrint(q)
     
 def printAnswerToFile(answer):
-    a = "Answer: " + answer
+    a = "Answer: " + answer + "\n \n"
     wPrint(a)
     
 def wPrint(s):

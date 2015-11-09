@@ -1,0 +1,3 @@
+To-do list:
+
+1. Write code to raise an exception in generateAnswersUsingJaccard() in jaccard.py when len(q) < 3

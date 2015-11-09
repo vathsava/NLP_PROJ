@@ -5,6 +5,8 @@
 import sys
 from generateAnswers import generateAnswers
 
+open("answers.txt","w")
+
 #########################################################
 #Reading the list of stories from input file
 inputFile = sys.argv[1]

@@ -1,9 +1,15 @@
 ###################################################
 #This file contains functions that refine the text
 ###################################################
+from string import maketrans
 def getSentencesFromStory(completeText):
     story = completeText.split("TEXT:")
-    sentences = story[1].split(".")
+    lines = story[1].split(".")
+    sentences= []
+    for line in lines:
+        l = line.replace("\n", " ")
+        l2 = removeExtraSpaces(l)
+        sentences.append(l2)
     return sentences
 
 def getQuestionsFromFile(completeText):
@@ -28,5 +34,21 @@ def getQuestionsFromFile(completeText):
                 count += 1
             count += 1
         count += 1        
-        
     return questions
+
+def removeSpecialCharacters(string1):
+    chars = "!@#$%^&*()[]{};:,./<>?\|`~-=_+"
+    repChars = "                              "
+    trantab = maketrans(chars,repChars);
+    st = string1.translate(trantab)
+    return st
+
+def removeExtraSpaces(string1):
+    string2 = " ".join(string1.split())
+    return string2
+
+def getWordsInString(fullString):
+        repString = removeSpecialCharacters(fullString)
+        repString2 = removeExtraSpaces(repString)
+        words = repString2.split(" ")
+        return words
