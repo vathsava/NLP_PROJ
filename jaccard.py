@@ -14,6 +14,17 @@ def jaccardDistance(quesWords,sentWords):
                 nonMatch += 1
     return (match/(match + nonMatch))
 
+def highestFrequency(quesWords,sentWords):
+    match = 0
+    nonMatch = 0
+    for qw in quesWords:
+        for aw in sentWords:
+            if qw == aw :
+                match += 1
+            else:
+                nonMatch += 1
+    return (match)
+
 def generateAnswersUsingJaccard(questions, sentences):
     maxd=0;
     ##############################################################################
@@ -32,13 +43,23 @@ def generateAnswersUsingJaccard(questions, sentences):
         maxd = 0 
         for s in sentences:
             sentWords = getWordsInString(s)
-            f = jaccardDistance(quesWords, sentWords)
+            f = highestFrequency(quesWords, sentWords)
             if maxd<f:
                 ans = s
                 maxd = f
+        
+        answers = []        
+        for s in sentences:
+            sentWords = getWordsInString(s)
+            f = highestFrequency(quesWords, sentWords)
+            if maxd == f:
+                answers.append(s)
                 
         printQuestion(quesString)
-        printAnswer(ans)
+        printQuestion(q[2])
+        for an in answers:
+            printAnswer(an)
+        
         printQuestionIDtoFile(qID)
         printAnswerToFile(ans)
         print "\n"

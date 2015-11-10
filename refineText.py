@@ -37,8 +37,8 @@ def getQuestionsFromFile(completeText):
     return questions
 
 def removeSpecialCharacters(string1):
-    chars = "!@#$%^&*()[]{};:,./<>?\|`~-=_+"
-    repChars = "                              "
+    chars = "!@#$%^&*()[]{};:,/<>?\|`~-=_+"
+    repChars = "                             "
     trantab = maketrans(chars,repChars);
     st = string1.translate(trantab)
     return st
@@ -50,5 +50,6 @@ def removeExtraSpaces(string1):
 def getWordsInString(fullString):
         repString = removeSpecialCharacters(fullString)
         repString2 = removeExtraSpaces(repString)
-        words = repString2.split(" ")
+        repString3 = repString2.lower()
+        words = repString3.split(" ")
         return words

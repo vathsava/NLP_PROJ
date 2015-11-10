@@ -8,38 +8,38 @@ QuestionID: 1999-W02-5-3
 Answer: South Queens Junior High School is taking aim at the fitness market
  
 QuestionID: 1999-W02-5-5
-Answer: the youngsters in the school," says Ann Jones
+Answer: Some people are wondering if the ties between the businesses and the school are too close
  
 QuestionID: 1999-W02-5-6
-Answer: the youngsters in the school," says Ann Jones
+Answer: Principal Betty Jean Aucoin says the club is a first for a Nova Scotia public school
  
 QuestionID: 1999-W02-5-7
-Answer: The club will be open seven days a week
+Answer: The club, operated by a non-profit society made up of school and community volunteers, has sold more than 30 memberships and hired a full-time co-ordinator
  
 QuestionID: 1999-W03-5-2
 Answer: But unlike retired millionaire Jordan, Babe never made a cent for her skills
  
 QuestionID: 1999-W03-5-3
-Answer: Babe never talked about her fabulous career
+Answer: But unlike retired millionaire Jordan, Babe never made a cent for her skills
  
 QuestionID: 1999-W03-5-4
-Answer: Their coach was teacher J
+Answer: She was a forward and she stood only 5 feet, 2 inches tall
  
 QuestionID: 1999-W03-5-5
-Answer: Their coach was teacher J
+Answer: They were just a group of young women from the same school who liked to play basketball
  
 QuestionID: 1999-W03-5-6
-Answer: Her team was known as the Edmonton Grads
+Answer: Of the 522 games they played they won 502! The inventor of the game of basketball, Dr
  
 QuestionID: 1999-W03-5-7
 Answer: James Naismith called the Edmonton Grads "the finest basketball team that ever stepped out on a floor"
  
 QuestionID: 1999-W03-5-8
-Answer: Babe never talked about her fabulous career
+Answer: The world lost a basketball hero this week -- and we're not talking about Michael Jordan
  
 QuestionID: 1999-W03-5-9
-Answer: Their coach was teacher J
+Answer: You may not know her name, but Noella "Babe" MacLean, who died this week at age 87, was one of Canada's biggest sports stars
  
 QuestionID: 1999-W03-5-10
-Answer: None of the members of the team expected to do as well as they did
+Answer: But her daughter says the scrapbooks she found in the family's basement show she was a part of a team that was every bit as sensational as the Edmonton Oilers in Gretzky's time
  
