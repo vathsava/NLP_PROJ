@@ -2,14 +2,15 @@
 #This file contains functions that refine the text
 ###################################################
 from string import maketrans
+from nltk.tokenize import sent_tokenize
 def getSentencesFromStory(completeText):
     story = completeText.split("TEXT:")
-    lines = story[1].split(".")
-    sentences= []
-    for line in lines:
-        l = line.replace("\n", " ")
-        l2 = removeExtraSpaces(l)
-        sentences.append(l2)
+    #lines = sent_tokenize(story[1]);
+    sentences= sent_tokenize(story[1]);
+  #  for line in lines:
+   #     l = line.replace("\n", " ")
+    #    l2 = removeExtraSpaces(l)
+     #   sentences.append(l2)
     return sentences
 
 def getQuestionsFromFile(completeText):
@@ -37,8 +38,8 @@ def getQuestionsFromFile(completeText):
     return questions
 
 def removeSpecialCharacters(string1):
-    chars = "!@#$%^&*()[]{};:,/<>?\|`~-=_+"
-    repChars = "                             "
+    chars = "!@#$%^&*()[]{};:,./<>?\|`~-=_+"
+    repChars = "                              "
     trantab = maketrans(chars,repChars);
     st = string1.translate(trantab)
     return st
@@ -50,6 +51,5 @@ def removeExtraSpaces(string1):
 def getWordsInString(fullString):
         repString = removeSpecialCharacters(fullString)
         repString2 = removeExtraSpaces(repString)
-        repString3 = repString2.lower()
-        words = repString3.split(" ")
+        words = repString2.split(" ")
         return words
