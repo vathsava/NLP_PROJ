@@ -1,15 +1,17 @@
 ###################################################
 #This file contains functions that refine the text
 ###################################################
+import nltk
 from string import maketrans
+from nltk.tokenize import sent_tokenize
 def getSentencesFromStory(completeText):
     story = completeText.split("TEXT:")
-    lines = story[1].split(".")
-    sentences= []
-    for line in lines:
-        l = line.replace("\n", " ")
-        l2 = removeExtraSpaces(l)
-        sentences.append(l2)
+    #lines = sent_tokenize(story[1]);
+    sentences= sent_tokenize(story[1]);
+  #  for line in lines:
+   #     l = line.replace("\n", " ")
+    #    l2 = removeExtraSpaces(l)
+     #   sentences.append(l2)
     return sentences
 
 def getQuestionsFromFile(completeText):

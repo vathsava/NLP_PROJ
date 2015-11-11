@@ -1,45 +1,70 @@
 QuestionID: 1999-W02-5-1
-Answer: South Queens Junior High School is taking aim at the fitness market
+Answer: South Queens Junior High School is taking aim at the fitness
+market.
  
 QuestionID: 1999-W02-5-2
-Answer: South Queens Junior High School is taking aim at the fitness market
+Answer: South Queens Junior High School is taking aim at the fitness
+market.
  
 QuestionID: 1999-W02-5-3
-Answer: South Queens Junior High School is taking aim at the fitness market
+Answer: South Queens Junior High School is taking aim at the fitness
+market.
  
 QuestionID: 1999-W02-5-5
-Answer: Some people are wondering if the ties between the businesses and the school are too close
+Answer: Some people are wondering if the ties between the businesses and the
+school are too close.
  
 QuestionID: 1999-W02-5-6
-Answer: Principal Betty Jean Aucoin says the club is a first for a Nova Scotia public school
+Answer: Principal Betty Jean Aucoin says the club is a first for a Nova Scotia
+public school.
  
 QuestionID: 1999-W02-5-7
-Answer: The club, operated by a non-profit society made up of school and community volunteers, has sold more than 30 memberships and hired a full-time co-ordinator
+Answer: The club, operated by a non-profit society made up of school and
+community volunteers, has sold more than 30 memberships and hired a
+full-time co-ordinator.
  
 QuestionID: 1999-W03-5-2
-Answer: But unlike retired millionaire Jordan, Babe never made a cent for her skills
+Answer: But unlike retired
+millionaire Jordan, Babe never made a cent for her skills.
  
 QuestionID: 1999-W03-5-3
-Answer: But unlike retired millionaire Jordan, Babe never made a cent for her skills
+Answer: But unlike retired
+millionaire Jordan, Babe never made a cent for her skills.
  
 QuestionID: 1999-W03-5-4
-Answer: She was a forward and she stood only 5 feet, 2 inches tall
+Answer: But her daughter says the
+scrapbooks she found in the family's basement show she was a part of a
+team that was every bit as sensational as the Edmonton Oilers in
+Gretzky's time.
+
  
 QuestionID: 1999-W03-5-5
-Answer: They were just a group of young women from the same school who liked to play basketball
+Answer: She was a member
+of the "winningest" basketball team Canada ever had.
  
 QuestionID: 1999-W03-5-6
-Answer: Of the 522 games they played they won 502! The inventor of the game of basketball, Dr
+Answer: The inventor
+of the game of basketball, Dr. James Naismith called the Edmonton Grads
+"the finest basketball team that ever stepped out on a floor".
  
 QuestionID: 1999-W03-5-7
-Answer: James Naismith called the Edmonton Grads "the finest basketball team that ever stepped out on a floor"
+Answer: The inventor
+of the game of basketball, Dr. James Naismith called the Edmonton Grads
+"the finest basketball team that ever stepped out on a floor".
  
 QuestionID: 1999-W03-5-8
-Answer: The world lost a basketball hero this week -- and we're not talking about Michael Jordan
+Answer: The inventor
+of the game of basketball, Dr. James Naismith called the Edmonton Grads
+"the finest basketball team that ever stepped out on a floor".
  
 QuestionID: 1999-W03-5-9
-Answer: You may not know her name, but Noella "Babe" MacLean, who died this week at age 87, was one of Canada's biggest sports stars
+Answer: You may not know her name, but Noella "Babe" MacLean, who died this week
+at age 87, was one of Canada's biggest sports stars.
  
 QuestionID: 1999-W03-5-10
-Answer: But her daughter says the scrapbooks she found in the family's basement show she was a part of a team that was every bit as sensational as the Edmonton Oilers in Gretzky's time
+Answer: But her daughter says the
+scrapbooks she found in the family's basement show she was a part of a
+team that was every bit as sensational as the Edmonton Oilers in
+Gretzky's time.
+
  
