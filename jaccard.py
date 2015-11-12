@@ -2,24 +2,27 @@ from __future__ import division
 from printingText import printQuestion, printQuestionIDtoFile
 from printingText import printAnswer, printAnswerToFile
 from refineText import getWordsInString
+from nltk.stem.snowball import SnowballStemmer
 
 def jaccardDistance(quesWords,sentWords):
+    stemmer = SnowballStemmer("english");
     match = 0
     nonMatch = 0
     for qw in quesWords:
         for aw in sentWords:
-            if qw == aw :
+            if stemmer.stem(qw) == stemmer.stem(aw) :
                 match += 1
             else:
                 nonMatch += 1
-    return (match/(match + nonMatch))
+    return (match)
 
 def highestFrequency(quesWords,sentWords):
+    stemmer = SnowballStemmer("english");
     match = 0
     nonMatch = 0
     for qw in quesWords:
         for aw in sentWords:
-            if qw == aw :
+            if stemmer.stem(qw) == stemmer.stem(aw) :
                 match += 1
             else:
                 nonMatch += 1
