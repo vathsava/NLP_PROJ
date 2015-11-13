@@ -1,25 +1,28 @@
 from __future__ import division
-from printingText import printQuestion, printQuestionIDtoFile
+from printingText import printQuestion, printQuestionIDtoFile, printDifficulty
 from printingText import printAnswer, printAnswerToFile
 from refineText import getWordsInString
+from nltk.stem.snowball import SnowballStemmer
 
 def jaccardDistance(quesWords,sentWords):
+    stemmer = SnowballStemmer("english");
     match = 0
     nonMatch = 0
     for qw in quesWords:
         for aw in sentWords:
-            if qw == aw :
+            if stemmer.stem(qw) == stemmer.stem(aw) :
                 match += 1
             else:
                 nonMatch += 1
     return (match/(match + nonMatch))
 
 def highestFrequency(quesWords,sentWords):
+    stemmer = SnowballStemmer("english");
     match = 0
     nonMatch = 0
     for qw in quesWords:
         for aw in sentWords:
-            if qw == aw :
+            if stemmer.stem(qw) == stemmer.stem(aw) :
                 match += 1
             else:
                 nonMatch += 1
@@ -56,10 +59,12 @@ def generateAnswersUsingJaccard(questions, sentences):
                 answers.append(s)
                 
         printQuestion(quesString)
-        printQuestion(q[2])
+        printDifficulty(q[2])
+        answ = ""
         for an in answers:
-            printAnswer(an)
+            answ=answ+an
+        printAnswer(answ)
         
         printQuestionIDtoFile(qID)
-        printAnswerToFile(ans)
+        printAnswerToFile(answ)
         print "\n"

@@ -2,6 +2,10 @@ def printQuestion(question):
     q = "Question: " + question
     print q
     
+def printDifficulty(question):
+    q = "Difficulty: " + question
+    print q
+    
 def printAnswer(answer):
     a = "Answer: " + answer
     print a
@@ -15,7 +19,7 @@ def printQuestionIDtoFile(qID):
     wPrint(q)
     
 def printAnswerToFile(answer):
-    a = "Answer: " + answer + "\n \n"
+    a = "Answer: " + answer + "\n"
     wPrint(a)
     
 def wPrint(s):

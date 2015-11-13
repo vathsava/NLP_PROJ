@@ -4,14 +4,19 @@
 import nltk
 from string import maketrans
 from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
 def getSentencesFromStory(completeText):
     story = completeText.split("TEXT:")
     #lines = sent_tokenize(story[1]);
-    sentences= sent_tokenize(story[1]);
-  #  for line in lines:
-   #     l = line.replace("\n", " ")
-    #    l2 = removeExtraSpaces(l)
-     #   sentences.append(l2)
+    lines = sent_tokenize(story[1]);
+    #lines2 = sent_tokenize(completeText)
+    sentences = []
+    for line in lines:
+        l = line.replace("\n", " ")
+        l2 = removeExtraSpaces(l)
+        sentences.append(l2)
     return sentences
 
 def getQuestionsFromFile(completeText):
@@ -50,7 +55,10 @@ def removeExtraSpaces(string1):
     return string2
 
 def getWordsInString(fullString):
-        repString = removeSpecialCharacters(fullString)
-        repString2 = removeExtraSpaces(repString)
-        words = repString2.split(" ")
+        #repString = removeSpecialCharacters(fullString)
+        #repString2 = removeExtraSpaces(repString)
+        #words = repString2.split(" ")
+        stopset = set(stopwords.words('english'))
+        wds = word_tokenize(fullString)
+        words = [w for w in wds if not w in stopset]
         return words
