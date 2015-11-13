@@ -1,14 +1,21 @@
 ###################################################
 #This file contains functions that refine the text
 ###################################################
-import nltk
 from string import maketrans
 from nltk.tokenize import sent_tokenize
+<<<<<<< HEAD
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
+=======
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+
+stopset=[];
+>>>>>>> 4ff15b45fe8de154fc1f9b27ba338040a698e825
 def getSentencesFromStory(completeText):
     story = completeText.split("TEXT:")
+    stopset=set(stopwords.words('english'));
     #lines = sent_tokenize(story[1]);
     lines = sent_tokenize(story[1]);
     #lines2 = sent_tokenize(completeText)
@@ -55,6 +62,7 @@ def removeExtraSpaces(string1):
     return string2
 
 def getWordsInString(fullString):
+<<<<<<< HEAD
         #repString = removeSpecialCharacters(fullString)
         #repString2 = removeExtraSpaces(repString)
         #words = repString2.split(" ")
@@ -62,3 +70,12 @@ def getWordsInString(fullString):
         wds = word_tokenize(fullString)
         words = [w for w in wds if not w in stopset]
         return words
+=======
+    
+        # repString = removeSpecialCharacters(fullString)
+        #repString2 = removeExtraSpaces(repString)
+        #words = repString2.split(" ")
+        sa=word_tokenize(fullString)
+        sa = [w for w in sa if not w in stopset]
+        return sa
+>>>>>>> 4ff15b45fe8de154fc1f9b27ba338040a698e825

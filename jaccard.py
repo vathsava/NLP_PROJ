@@ -14,7 +14,7 @@ def jaccardDistance(quesWords,sentWords):
                 match += 1
             else:
                 nonMatch += 1
-    return (match/(match + nonMatch))
+    return (match)
 
 def highestFrequency(quesWords,sentWords):
     stemmer = SnowballStemmer("english");
@@ -66,5 +66,10 @@ def generateAnswersUsingJaccard(questions, sentences):
         printAnswer(answ)
         
         printQuestionIDtoFile(qID)
+<<<<<<< HEAD
         printAnswerToFile(answ)
         print "\n"
+=======
+        printAnswerToFile(ans)
+        print "\n"
+>>>>>>> 4ff15b45fe8de154fc1f9b27ba338040a698e825
